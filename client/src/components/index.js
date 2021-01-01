@@ -1,6 +1,5 @@
+import Game from './Game'
+import GameSession from './GameSession'
+import NewGame from './NewGame'
 
-import Links from './Links'
-import Logo from './Logo'
-import NavBar from './NavBar'
-
-export { Links, Logo, NavBar }
+export { Game, GameSession, NewGame }
