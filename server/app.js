@@ -15,15 +15,7 @@ app.use(express.static("public"));
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-// app.get('/', (req,res) => {
-//     res.send('hello world');
-// })
-
-// app.get('/api/game', (req,res) => {
-//     res.send('new game created');
-// })
-
-// app.use('/api', gameRouter)
+app.use('/api', gameRouter)
 
 app.listen(apiPort,() => {
     console.log('Server listening on port 3000')

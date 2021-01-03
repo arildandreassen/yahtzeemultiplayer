@@ -1,10 +1,12 @@
 import React from 'react'
-import { Game } from '../components'
+import { Game, Header, Footer } from '../components'
 
 function App() {
     return (
         <div>
+            <Header />
             <Game />
+            <Footer />
         </div>
     )
 }

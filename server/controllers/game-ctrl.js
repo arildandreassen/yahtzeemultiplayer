@@ -1,14 +1,13 @@
 const Game = require('../models/game-model')
 
 const createGame = (req, res) => {
-    const body = req.body;
     const newGame = new Game({name:'234876gjufsd'})
-
     newGame
         .save()
         .then(() => {
             return res.status(201).json({
                 success: true,
+                body: newGame,
                 message: 'Game created!',
             })
         })
