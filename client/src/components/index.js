@@ -1,7 +1,9 @@
+import AddPlayer from './AddPlayer'
+import AddPlayerModal from './AddPlayerModal'
 import Footer from './Footer'
-import Game from './Game'
+import GameSelection from './GameSelection'
 import GameSession from './GameSession'
-import NewGame from './NewGame'
 import Header from './Header'
+import Players from './Players'
 
-export { Footer, Game, GameSession,Header, NewGame }
+export {AddPlayer, AddPlayerModal, Footer, GameSelection, GameSession, Header, Players }

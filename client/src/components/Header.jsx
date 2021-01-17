@@ -1,11 +1,13 @@
 import React from "react";
 
 function Header(props) {
-    return (
-        <header>
-            <h1>Arild's Game Library</h1>
-        </header>
-      );
+  return (
+    <div>
+      <header>
+        <h1>Let's Play Together</h1>
+      </header>
+    </div>
+  );
 }
 
 export default Header;

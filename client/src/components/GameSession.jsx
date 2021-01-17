@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import { AddPlayer } from "./index";
 
-function GameSession() {
+const GameSession = (props) => {
+  const [players, addPlayer] = useState(["arild"]);
 
-    return (
-        <header>
-            <h1>here is the new game</h1>
-        </header>
-      );
-}
+  const addNewPlayer = () => {};
+  return (
+    <div>
+      {/* {players.forEach((player) => {
+        console.log(player);
+      })} */}
+      <AddPlayer />
+    </div>
+  );
+};
 
 export default GameSession;

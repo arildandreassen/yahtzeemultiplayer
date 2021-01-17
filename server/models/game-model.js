@@ -1,12 +1,13 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const Game = new Schema(
-    {
-        name:'String'
-    },
-    { timestamps: true },
-    )
+  {
+    _id: "String",
+    name: "String",
+    players: ["String"],
+  },
+  { timestamps: true }
+);
 
-module.exports = mongoose.model('games', Game);
-
+module.exports = mongoose.model("games", Game);
